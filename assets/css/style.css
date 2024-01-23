@@ -7,28 +7,36 @@
 header{
   height: 50px;
   background-color: black;
-  position: relative;
+
 }
 
-header div {
+header div{
+  text-align: right;
+}
+
+header div button{
   color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 5px;
   background-color: #4A4A4A;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2px 5px 0 5px;
+  border: none;
 }
-header div span{
-  margin-left: 5px;
-}
-p{
-  color: white;
-}
+
 main{
   background-color: black;
   height: calc(100vh - 100px);
   overflow: auto;
+}
+
+main .photo img{
+  position: relative;
+}
+
+main .photo img span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer{
