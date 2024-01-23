@@ -27,19 +27,81 @@ main{
   background-color: black;
   height: calc(100vh - 100px);
   overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-main .photo img{
+.photo{
   position: relative;
+  padding: 3px;
+  
 }
 
-main .photo img span{
+.user{
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
   left: 0;
+  background-color: #707981;
+  color: white;
+  padding: 2px;
 }
 
 footer{
-  background-color: red;
+  background-color: black;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.symbol{
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: white;
+
+}
+
+.text-symbol{
+  color: white;
+}
+
+.start{
+  display: flex;
+  align-items: center;
+  
+}
+.center{
+  width: 50vh;
+}
+
+.start ul{
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+}
+.center ul{
+  display: flex;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+}
+
+.end{
+  display: flex;
+  align-items: center;
+  
+}
+
+.end{
+  background-color: #4A4A4A;
+}
+.end span{
+  color: red;
 }
