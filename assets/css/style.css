@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 header{
-  height: 50px;
+  height: 100px;
   background-color: black;
 
 }
@@ -25,7 +29,7 @@ header div button{
 
 main{
   background-color: black;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 180px);
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
@@ -40,8 +44,8 @@ main{
 
 .user{
   position: absolute;
-  bottom: 6px;
-  left: 0;
+  bottom: 8px;
+  left: 3px;
   background-color: #707981;
   color: white;
   padding: 2px;
@@ -49,16 +53,30 @@ main{
 
 footer{
   background-color: black;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.symbol{
-  font-size: 1.5rem;
+.icona{
+  height: 100%;
+  /* font-size: 1.7rem; */
   vertical-align: middle;
   color: white;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.icona i{
+  font-size: 1.7rem;
+}
+
+.icona i .fa-chevron-up{
+  font-size: 1rem;
 }
 
 .text-symbol{
@@ -67,17 +85,12 @@ footer{
 
 .start{
   display: flex;
-  align-items: center;
-  
-}
-.center{
-  width: 50vh;
 }
 
-.start ul{
+/* .start ul{
   display: flex;
   align-items: center;
-}
+} */
 
 .center{
   display: flex;
@@ -96,12 +109,10 @@ li{
 .end{
   display: flex;
   align-items: center;
+  background-color: #4A4A4A;
   
 }
 
-.end{
-  background-color: #4A4A4A;
-}
 .end span{
   color: red;
 }
