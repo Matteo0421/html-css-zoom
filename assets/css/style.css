@@ -52,67 +52,52 @@ main{
 }
 
 footer{
-  background-color: black;
+  background-color:black;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.icona{
+.footer-left, 
+.footer-center, 
+.footer-right{
   height: 100%;
-  /* font-size: 1.7rem; */
-  vertical-align: middle;
-  color: white;
+}
+
+.footer-left, 
+.footer-center{
+  display: flex;
+}
+
+footer .icon{
+  height: 100%;
   padding: 12px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-.icona i{
-  font-size: 1.7rem;
-}
-
-.icona i .fa-chevron-up{
-  font-size: 1rem;
-}
-
-.text-symbol{
+  cursor: pointer;
   color: white;
 }
 
-.start{
-  display: flex;
+footer .icon i{
+  font-size: 1.7rem;
 }
 
-/* .start ul{
-  display: flex;
-  align-items: center;
-} */
-
-.center{
-  display: flex;
-  align-items: center;
-}
-.center ul{
-  display: flex;
-  align-items: center;
+footer .icon i.fa-angle-up{
+  font-size: 1rem;
 }
 
-li{
-  list-style: none;
-  padding: 5px;
+footer .icon:hover i,
+footer .icon.active i{
+  color: #46D000;
 }
 
-.end{
-  display: flex;
-  align-items: center;
+.footer-right button{
+  height: 100%;
+  padding: 15px;
   background-color: #4A4A4A;
-  
-}
-
-.end span{
   color: red;
+  border: 0;
 }
